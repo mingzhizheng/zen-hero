@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zen Liquidator | Wholesale Truckload & Pallet Liquidation — Lawrenceville, GA</title>
+<meta name="description" content="Source manifested truckloads, pallets, and container loads of customer returns, overstock, and shelf pulls from major U.S. retailers. 100,000 sq ft GA facility. Ship nationwide & worldwide." />
+
+<!-- Tailwind CSS via CDN (good for Wix HTML embed / static hosting) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts: Industrial + readable -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: {
+            900: '#0B1220',
+            800: '#0F172A',
+            700: '#1E293B',
+            600: '#334155',
+          },
+          amber: {
+            500: '#F59E0B',
+            600: '#D97706',
+            400: '#FBBF24',
+          },
+        },
+        fontFamily: {
+          display: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          'industrial': '0 25px 50px -12px rgba(245, 158, 11, 0.25)',
+          'card': '0 10px 30px -10px rgba(0,0,0,0.5)',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background:#0B1220; color:#F1F5F9; }
+  .font-display { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.02em; }
+  /* Diagonal "industrial" stripe */
+  .stripe-bg {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(245,158,11,0.08) 0px,
+      rgba(245,158,11,0.08) 2px,
+      transparent 2px,
+      transparent 14px
+    );
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(245,158,11,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,158,11,0.07) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(11,18,32,0.95) 0%, rgba(11,18,32,0.75) 60%, rgba(245,158,11,0.15) 100%);
+  }
+  /* Marquee for retailer logos */
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .marquee-track { animation: marquee 35s linear infinite; }
+  .card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .card-hover:hover { transform: translateY(-4px); border-color:#F59E0B; box-shadow: 0 20px 40px -15px rgba(245,158,11,0.35); }
+  .badge-pulse::before {
+    content:''; position:absolute; inset:0; border-radius:9999px; background:#F59E0B; opacity:.4;
+    animation: ping 1.6s cubic-bezier(0,0,0.2,1) infinite;
+  }
+  @keyframes ping { 75%, 100% { transform: scale(2); opacity:0; } }
+  .cta-btn {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    box-shadow: 0 10px 25px -8px rgba(245,158,11,0.5);
+    transition: all .2s ease;
+  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 15px 35px -10px rgba(245,158,11,0.65); }
+  .glass {
+    background: rgba(30,41,59,0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(245,158,11,0.15);
+  }
+  /* Number ticker */
+  .stat-num { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- =========================== TOP BAR =========================== -->
+<div class="bg-ink-900 border-b border-ink-700/60 text-xs text-slate-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex items-center gap-5">
+      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 relative"><span class="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-60"></span></span> Live inventory: <span class="text-emerald-300 font-semibold">14 truckloads</span> ready to ship</span>
+      <span class="hidden md:inline">|</span>
+      <span class="hidden md:flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> FOB: GA · TN · NJ · TX · CA</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="tel:+17705550100" class="hover:text-amber-400 flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5"></i> +1 (770) 555-0100</a>
+      <a href="mailto:sales@zenliquidator.com" class="hidden sm:flex hover:text-amber-400 items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5"></i> sales@zenliquidator.com</a>
+      <span class="hidden md:inline">|</span>
+      <a href="#login" class="hover:text-amber-400">EN</a><span>·</span><a href="#login" class="hover:text-amber-400">ES</a><span>·</span><a href="#login" class="hover:text-amber-400">中</a>
+    </div>
+  </div>
+</div>
+
+<!-- =========================== NAV =========================== -->
+<header class="sticky top-0 z-50 bg-ink-900/95 backdrop-blur-md border-b border-ink-700/60">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-8">
+    <a href="#" class="flex items-center gap-3 shrink-0">
+      <div class="w-11 h-11 rounded-lg bg-amber-500 flex items-center justify-center font-display text-ink-900 text-2xl shadow-industrial">Z</div>
+      <div class="leading-tight">
+        <div class="font-display text-2xl text-white tracking-wide">ZEN LIQUIDATOR</div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-amber-400 font-semibold">Wholesale · Truckload · Pallet</div>
+      </div>
+    </a>
+    <ul class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+      <li class="relative group">
+        <a href="#shop" class="hover:text-amber-400 flex items-center gap-1">Shop Inventory <i data-lucide="chevron-down" class="w-4 h-4"></i></a>
+        <div class="absolute left-0 top-full pt-3 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition">
+          <div class="bg-ink-800 border border-ink-700 rounded-xl shadow-card p-4 grid grid-cols-2 gap-3 w-[420px]">
+            <a href="#truckload" class="p-3 rounded-lg hover:bg-ink-700/70 flex items-start gap-3"><i data-lucide="truck" class="w-5 h-5 text-amber-400 mt-0.5"></i><div><div class="text-white font-semibold">Truckloads</div><div class="text-xs text-slate-400">22–26 pallets, full FCL</div></div></a>
+            <a href="#pallet" class="p-3 rounded-lg hover:bg-ink-700/70 flex items-start gap-3"><i data-lucide="package" class="w-5 h-5 text-amber-400 mt-0.5"></i><div><div class="text-white font-semibold">Pallets</div><div class="text-xs text-slate-400">Single & multi-pallet lots</div></div></a>
+            <a href="#box" class="p-3 rounded-lg hover:bg-ink-700/70 flex items-start gap-3"><i data-lucide="box" class="w-5 h-5 text-amber-400 mt-0.5"></i><div><div class="text-white font-semibold">Box / Case Lots</div><div class="text-xs text-slate-400">B2C-friendly small lots</div></div></a>
+            <a href="#container" class="p-3 rounded-lg hover:bg-ink-700/70 flex items-start gap-3"><i data-lucide="container" class="w-5 h-5 text-amber-400 mt-0.5"></i><div><div class="text-white font-semibold">Container Loads</div><div class="text-xs text-slate-400">40HQ for export</div></div></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#categories" class="hover:text-amber-400">Categories</a></li>
+      <li><a href="#retailers" class="hover:text-amber-400">Retailers</a></li>
+      <li><a href="#process" class="hover:text-amber-400">How It Works</a></li>
+      <li><a href="#facility" class="hover:text-amber-400">Facility</a></li>
+      <li><a href="#about" class="hover:text-amber-400">About</a></li>
+      <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-3">
+      <a href="#login" class="hidden md:block text-sm text-slate-200 hover:text-amber-400">Sign In</a>
+      <a href="#quote" class="cta-btn text-ink-900 font-bold px-5 py-2.5 rounded-lg text-sm flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i> Request Quote</a>
+      <button class="lg:hidden text-white" id="mobileToggle"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+  </nav>
+</header>
+
+<!-- =========================== HERO =========================== -->
+<section class="relative overflow-hidden">
+  <!-- Background image with overlay -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80" alt="warehouse" class="w-full h-full object-cover opacity-50" onerror="this.style.display='none'"/>
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-28">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6">
+          <span class="relative flex w-2 h-2"><span class="badge-pulse absolute"></span><span class="relative inline-flex rounded-full w-2 h-2 bg-amber-400"></span></span>
+          Direct From Top U.S. Retailers — New Lots Daily
+        </div>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[0.95] mb-6">
+          MOVE TRUCKLOADS.<br/>
+          <span class="text-amber-400">MAKE PROFITS.</span><br/>
+          ZERO MIDDLEMEN.
+        </h1>
+        <p class="text-lg lg:text-xl text-slate-300 max-w-2xl mb-8 leading-relaxed">
+          Source <strong class="text-white">manifested truckloads, pallets, and container loads</strong> of customer returns, overstock, and shelf pulls from <strong class="text-amber-400">Amazon, Walmart, Target, Home Depot, Costco</strong> and more. Ship from our 100,000 sq ft Georgia hub — or drop-ship worldwide.
+        </p>
+
+        <!-- Hero search/CTA -->
+        <div class="glass rounded-2xl p-3 mb-6 max-w-2xl">
+          <form class="flex flex-col sm:flex-row gap-2">
+            <select class="bg-ink-700 text-white rounded-lg px-4 py-3 border border-ink-600 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/30 outline-none">
+              <option>All Lot Sizes</option>
+              <option>Truckload</option>
+              <option>Pallet</option>
+              <option>Box / Case</option>
+              <option>40' Container</option>
+            </select>
+            <input type="text" placeholder="Search Apparel, Electronics, Tools..." class="flex-1 bg-ink-700 text-white rounded-lg px-4 py-3 border border-ink-600 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/30 outline-none placeholder-slate-400" />
+            <button class="cta-btn text-ink-900 font-bold px-6 py-3 rounded-lg flex items-center justify-center gap-2"><i data-lucide="search" class="w-5 h-5"></i> Search</button>
+          </form>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#shop" class="cta-btn text-ink-900 font-bold px-7 py-3.5 rounded-lg inline-flex items-center gap-2"><i data-lucide="shopping-cart" class="w-5 h-5"></i> Shop Live Inventory</a>
+          <a href="#quote" class="border-2 border-slate-400 hover:border-amber-400 hover:text-amber-400 text-white px-7 py-3 rounded-lg font-semibold inline-flex items-center gap-2 transition"><i data-lucide="phone-call" class="w-5 h-5"></i> Talk to a Sales Rep</a>
+        </div>
+
+        <!-- Trust mini-stats -->
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div>
+            <div class="font-display text-4xl text-amber-400 stat-num">100K</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">Sq Ft Facility</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl text-amber-400 stat-num">15+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">Years in Trade</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl text-amber-400 stat-num">40+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">Countries Shipped</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl text-amber-400 stat-num">A+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">BBB Rated</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Live auction-style preview -->
+      <div class="lg:col-span-5">
+        <div class="glass rounded-2xl p-5 shadow-card">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-xs uppercase tracking-wider text-emerald-400 font-bold">LIVE · 14 Lots Available</span>
+            </div>
+            <a href="#shop" class="text-xs text-amber-400 hover:underline">View all →</a>
+          </div>
+          <div class="space-y-3">
+            <!-- Lot card 1 -->
+            <div class="bg-ink-800/80 border border-ink-700 hover:border-amber-500 rounded-xl p-4 card-hover">
+              <div class="flex gap-3">
+                <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-amber-500/20 to-amber-600/5 flex items-center justify-center text-amber-400 shrink-0"><i data-lucide="truck" class="w-9 h-9"></i></div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-ink-900 bg-amber-400 px-2 py-0.5 rounded">TRUCKLOAD</span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-emerald-300 bg-emerald-900/50 px-2 py-0.5 rounded">MANIFESTED</span>
+                  </div>
+                  <h4 class="text-white font-semibold text-sm leading-tight truncate">26 Pallets · Amazon LPN Mixed Smalls</h4>
+                  <div class="text-xs text-slate-400 mt-1">Lawrenceville, GA · Ext. Retail $182,400</div>
+                  <div class="flex items-center justify-between mt-2">
+                    <div class="text-amber-400 font-bold text-base">$17,995</div>
+                    <a href="#" class="text-xs text-slate-300 hover:text-amber-400">Details →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Lot card 2 -->
+            <div class="bg-ink-800/80 border border-ink-700 hover:border-amber-500 rounded-xl p-4 card-hover">
+              <div class="flex gap-3">
+                <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-amber-500/20 to-amber-600/5 flex items-center justify-center text-amber-400 shrink-0"><i data-lucide="package" class="w-9 h-9"></i></div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-ink-900 bg-amber-400 px-2 py-0.5 rounded">PALLET</span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-slate-300 bg-ink-700 px-2 py-0.5 rounded">SHELF PULLS</span>
+                  </div>
+                  <h4 class="text-white font-semibold text-sm leading-tight">Target General Merchandise · 1 Pallet</h4>
+                  <div class="text-xs text-slate-400 mt-1">Edison, NJ · 412 Units · Ext. Retail $11,820</div>
+                  <div class="flex items-center justify-between mt-2">
+                    <div class="text-amber-400 font-bold text-base">$2,195</div>
+                    <a href="#" class="text-xs text-slate-300 hover:text-amber-400">Details →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Lot card 3 -->
+            <div class="bg-ink-800/80 border border-ink-700 hover:border-amber-500 rounded-xl p-4 card-hover">
+              <div class="flex gap-3">
+                <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-amber-500/20 to-amber-600/5 flex items-center justify-center text-amber-400 shrink-0"><i data-lucide="container" class="w-9 h-9"></i></div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-ink-900 bg-amber-400 px-2 py-0.5 rounded">40' CONTAINER</span>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-red-300 bg-red-900/40 px-2 py-0.5 rounded">EXPORT-READY</span>
+                  </div>
+                  <h4 class="text-white font-semibold text-sm leading-tight">Walmart Apparel & Footwear Mix</h4>
+                  <div class="text-xs text-slate-400 mt-1">Long Beach, CA · 26 Pallets · Mixed Cond.</div>
+                  <div class="flex items-center justify-between mt-2">
+                    <div class="text-amber-400 font-bold text-base">$28,500</div>
+                    <a href="#" class="text-xs text-slate-300 hover:text-amber-400">Details →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-ink-700/80 flex items-center justify-between text-xs">
+            <span class="text-slate-400 flex items-center gap-1.5"><i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Updated 4 min ago</span>
+            <a href="#shop" class="text-amber-400 font-semibold hover:underline">See all 14 lots →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom-of-hero diagonal stripe accent -->
+  <div class="absolute bottom-0 left-0 right-0 h-1 stripe-bg"></div>
+</section>
+
+<!-- =========================== RETAILER LOGO STRIP =========================== -->
+<section id="retailers" class="bg-ink-800 py-10 border-y border-ink-700">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-6">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold">Sourced Direct From</p>
+      <h2 class="font-display text-3xl text-white mt-1">TOP U.S. RETAILERS & BRANDS</h2>
+    </div>
+    <div class="overflow-hidden relative" style="mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);">
+      <div class="flex gap-12 marquee-track w-max items-center">
+        <!-- Logo set 1 -->
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">AMAZON</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">WALMART</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">TARGET</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">COSTCO</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">HOME DEPOT</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">LOWE'S</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">MACY'S</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">JCPENNEY</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">SAMSUNG</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">WHIRLPOOL</div>
+        <!-- Logo set 2 (duplicate for seamless loop) -->
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">AMAZON</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">WALMART</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">TARGET</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">COSTCO</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">HOME DEPOT</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">LOWE'S</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">MACY'S</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">JCPENNEY</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">SAMSUNG</div>
+        <div class="font-display text-3xl text-slate-400 hover:text-amber-400 transition px-2">WHIRLPOOL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== LOT SIZE CARDS =========================== -->
+<section id="shop" class="py-20 bg-ink-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Pick Your Volume</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">SHOP BY LOT SIZE</h2>
+      <p class="text-slate-400">From a single case for your bin store to a 40-foot container for export — we move every volume, every week.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Truckload -->
+      <a href="#truckload" class="group relative bg-gradient-to-br from-ink-700 to-ink-800 border border-ink-600 hover:border-amber-500 rounded-2xl p-6 card-hover overflow-hidden">
+        <div class="absolute -top-8 -right-8 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/30 transition"></div>
+        <div class="relative">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 mb-5"><i data-lucide="truck" class="w-7 h-7"></i></div>
+          <div class="font-display text-3xl text-white mb-1">TRUCKLOADS</div>
+          <p class="text-sm text-slate-400 mb-4">22–26 pallets per load. Lowest cost-per-unit, best for serious resellers.</p>
+          <ul class="text-xs space-y-1 text-slate-300 mb-5">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Manifested or unmanifested</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Customer returns, overstock, shelf pulls</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Drop-ship nationwide</li>
+          </ul>
+          <span class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold group-hover:gap-2 transition-all">Browse Truckloads <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+        </div>
+      </a>
+      <!-- Pallet -->
+      <a href="#pallet" class="group relative bg-gradient-to-br from-ink-700 to-ink-800 border border-ink-600 hover:border-amber-500 rounded-2xl p-6 card-hover overflow-hidden">
+        <div class="absolute -top-8 -right-8 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/30 transition"></div>
+        <div class="relative">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 mb-5"><i data-lucide="package" class="w-7 h-7"></i></div>
+          <div class="font-display text-3xl text-white mb-1">PALLETS</div>
+          <p class="text-sm text-slate-400 mb-4">Single or multi-pallet. Perfect for online resellers and bin stores.</p>
+          <ul class="text-xs space-y-1 text-slate-300 mb-5">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> By category or mixed</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> LTL freight quote in 24h</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> No minimum order</li>
+          </ul>
+          <span class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold group-hover:gap-2 transition-all">Browse Pallets <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+        </div>
+      </a>
+      <!-- Box -->
+      <a href="#box" class="group relative bg-gradient-to-br from-ink-700 to-ink-800 border border-ink-600 hover:border-amber-500 rounded-2xl p-6 card-hover overflow-hidden">
+        <div class="absolute -top-8 -right-8 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/30 transition"></div>
+        <div class="relative">
+          <div class="w-14 h-14 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-400 mb-5"><i data-lucide="box" class="w-7 h-7"></i></div>
+          <div class="font-display text-3xl text-white mb-1">BOX & CASE</div>
+          <p class="text-sm text-slate-400 mb-4">Small lots ideal for eBay, Amazon FBM, and flea-market vendors.</p>
+          <ul class="text-xs space-y-1 text-slate-300 mb-5">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Starting under $200</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Mystery box options</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Ships in 48h</li>
+          </ul>
+          <span class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold group-hover:gap-2 transition-all">Browse Box Lots <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+        </div>
+      </a>
+      <!-- Container -->
+      <a href="#container" class="group relative bg-gradient-to-br from-amber-600 to-amber-700 border border-amber-500 hover:border-white rounded-2xl p-6 card-hover overflow-hidden text-ink-900">
+        <div class="absolute -top-8 -right-8 w-32 h-32 bg-white/15 rounded-full blur-2xl group-hover:bg-white/30 transition"></div>
+        <div class="relative">
+          <div class="w-14 h-14 rounded-xl bg-ink-900/15 flex items-center justify-center mb-5"><i data-lucide="container" class="w-7 h-7"></i></div>
+          <div class="font-display text-3xl text-ink-900 mb-1">40' CONTAINERS</div>
+          <p class="text-sm text-ink-900/80 mb-4 font-medium">FCL export to LATAM, Africa, SE Asia, Europe. We handle customs.</p>
+          <ul class="text-xs space-y-1 text-ink-900/90 font-medium mb-5">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5"></i> 26-pallet capacity</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5"></i> Door-to-port shipping</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5"></i> Export docs handled</li>
+          </ul>
+          <span class="inline-flex items-center gap-1 text-ink-900 text-sm font-bold group-hover:gap-2 transition-all">Request Container Quote <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== LIVE INVENTORY GRID =========================== -->
+<section id="truckload" class="py-20 bg-ink-800 border-y border-ink-700/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Live & Manifested</p>
+        <h2 class="font-display text-4xl md:text-5xl text-white">FEATURED LOTS</h2>
+        <p class="text-slate-400 mt-2 max-w-2xl">Hand-curated selection. Full manifests available on request. Lots refresh daily at 12:00 PM ET.</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button class="px-4 py-2 rounded-full bg-amber-500 text-ink-900 font-semibold text-sm">All</button>
+        <button class="px-4 py-2 rounded-full bg-ink-700 hover:bg-ink-600 text-slate-200 text-sm">Truckload</button>
+        <button class="px-4 py-2 rounded-full bg-ink-700 hover:bg-ink-600 text-slate-200 text-sm">Pallet</button>
+        <button class="px-4 py-2 rounded-full bg-ink-700 hover:bg-ink-600 text-slate-200 text-sm">Container</button>
+        <button class="px-4 py-2 rounded-full bg-ink-700 hover:bg-ink-600 text-slate-200 text-sm">Amazon LPN</button>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <!-- Lot 1 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-amber-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="truck" class="w-20 h-20 text-amber-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">TRUCKLOAD</span>
+          <span class="absolute top-3 right-3 text-[10px] uppercase font-bold tracking-wider bg-emerald-500/90 text-ink-900 px-2 py-0.5 rounded">MANIFESTED</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Amazon LPN · Mixed Smalls</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">26 Pallets · Mixed Smalls — Amazon LPN</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lawrenceville, GA</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 3,820 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $182,400</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$17,995</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 2 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-blue-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="shirt" class="w-20 h-20 text-blue-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">TRUCKLOAD</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Target · Apparel</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">24 Pallets · Women's Apparel & Footwear</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Edison, NJ</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 2,134 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $74,212</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$9,450</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 3 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-emerald-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="wrench" class="w-20 h-20 text-emerald-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">TRUCKLOAD</span>
+          <span class="absolute top-3 right-3 text-[10px] uppercase font-bold tracking-wider bg-red-500/90 text-white px-2 py-0.5 rounded">HOT</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Home Depot · Tools</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">22 Pallets · Power Tools & Hardware</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Memphis, TN</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 1,490 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $96,540</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$14,200</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 4 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-rose-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="container" class="w-20 h-20 text-rose-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">40' CONTAINER</span>
+          <span class="absolute top-3 right-3 text-[10px] uppercase font-bold tracking-wider bg-purple-500/90 text-white px-2 py-0.5 rounded">EXPORT</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Walmart · General Merch</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">FCL · Mixed Apparel + Housewares</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Long Beach, CA</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 26 pallets</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $124,000</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">FOB Asking</div>
+              <div class="font-display text-2xl text-amber-400">$28,500</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">Request Quote</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 5 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-cyan-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="smartphone" class="w-20 h-20 text-cyan-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">PALLET</span>
+          <span class="absolute top-3 right-3 text-[10px] uppercase font-bold tracking-wider bg-emerald-500/90 text-ink-900 px-2 py-0.5 rounded">GRADE A/B</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Costco · Electronics</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">2 Pallets · Consumer Electronics Returns</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Dallas, TX</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 287 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $42,890</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$8,750</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 6 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-yellow-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="baby" class="w-20 h-20 text-yellow-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">PALLET</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Macy's · Baby & Kids</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">4 Pallets · Baby Essentials & Toys</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lawrenceville, GA</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 1,720 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $28,140</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$3,890</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 7 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-orange-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="sofa" class="w-20 h-20 text-orange-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">TRUCKLOAD</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Wayfair · Furniture</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">22 Pallets · Mixed Furniture Returns</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Edison, NJ</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 312 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $112,330</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$19,800</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">View Manifest</a>
+          </div>
+        </div>
+      </article>
+      <!-- Lot 8 -->
+      <article class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-pink-500/20 to-ink-900 relative flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-20 h-20 text-pink-400/70"></i>
+          <span class="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-amber-400 text-ink-900 px-2 py-0.5 rounded">BOX</span>
+          <span class="absolute top-3 right-3 text-[10px] uppercase font-bold tracking-wider bg-emerald-500/90 text-ink-900 px-2 py-0.5 rounded">NEW</span>
+        </div>
+        <div class="p-5">
+          <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-1">Sephora · Beauty</div>
+          <h3 class="text-white font-semibold leading-tight mb-2">1 Case · Premium Cosmetics</h3>
+          <div class="text-xs text-slate-400 space-y-1 mb-4">
+            <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lawrenceville, GA</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="hash" class="w-3.5 h-3.5"></i> 64 units</div>
+            <div class="flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Ext. Retail $2,180</div>
+          </div>
+          <div class="flex items-end justify-between pt-3 border-t border-ink-700">
+            <div>
+              <div class="text-[10px] text-slate-500 uppercase tracking-wider">Asking</div>
+              <div class="font-display text-2xl text-amber-400">$485</div>
+            </div>
+            <a href="#" class="cta-btn text-ink-900 font-bold text-xs px-3 py-2 rounded-lg">Buy Now</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#all-lots" class="inline-flex items-center gap-2 border-2 border-amber-500 hover:bg-amber-500 hover:text-ink-900 text-amber-400 px-8 py-3 rounded-lg font-bold transition">Browse All 142 Available Lots <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CATEGORIES =========================== -->
+<section id="categories" class="py-20 bg-ink-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Shop By</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">PRODUCT CATEGORIES</h2>
+      <p class="text-slate-400">Diverse merchandise from every major U.S. retailer — sorted, graded, and ready to move.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="shirt" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Apparel</div>
+        <div class="text-xs text-slate-500 mt-1">128 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="smartphone" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Electronics</div>
+        <div class="text-xs text-slate-500 mt-1">94 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="footprints" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Footwear</div>
+        <div class="text-xs text-slate-500 mt-1">76 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="wrench" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Tools / Hardware</div>
+        <div class="text-xs text-slate-500 mt-1">62 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="sparkles" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Beauty / HBA</div>
+        <div class="text-xs text-slate-500 mt-1">48 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="sofa" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Furniture</div>
+        <div class="text-xs text-slate-500 mt-1">34 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="utensils" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Housewares</div>
+        <div class="text-xs text-slate-500 mt-1">88 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="baby" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Baby & Toys</div>
+        <div class="text-xs text-slate-500 mt-1">57 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="washing-machine" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Appliances</div>
+        <div class="text-xs text-slate-500 mt-1">29 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="dumbbell" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Sporting Goods</div>
+        <div class="text-xs text-slate-500 mt-1">41 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="briefcase" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">Handbags</div>
+        <div class="text-xs text-slate-500 mt-1">33 lots</div>
+      </a>
+      <a href="#" class="group bg-ink-800 hover:bg-ink-700 border border-ink-700 hover:border-amber-500 rounded-xl p-5 text-center card-hover">
+        <i data-lucide="layers" class="w-10 h-10 mx-auto text-amber-400 mb-2"></i>
+        <div class="text-white font-semibold text-sm">General Merch</div>
+        <div class="text-xs text-slate-500 mt-1">164 lots</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== WHY US =========================== -->
+<section id="about" class="py-20 bg-ink-800 border-y border-ink-700/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Why Choose Zen</p>
+        <h2 class="font-display text-4xl md:text-5xl text-white mb-4">15 YEARS OF<br/>RELIABLE BULK SUPPLY</h2>
+        <p class="text-slate-300 mb-8 leading-relaxed">
+          We don't operate retail channels — every load we receive goes straight to wholesale buyers like you. No retail cherry-picking, no markups, just <strong class="text-amber-400">direct B2B supply</strong> from a single 100,000 sq ft hub in Lawrenceville, Georgia, with shipping points in TN, NJ, TX, and CA.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="flex gap-3"><i data-lucide="badge-check" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">Wholesale-Only</div><div class="text-sm text-slate-400">No retail competition — you get first pick.</div></div></div>
+          <div class="flex gap-3"><i data-lucide="file-check-2" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">Full Manifests</div><div class="text-sm text-slate-400">Item-level UPC, MSRP, qty, condition.</div></div></div>
+          <div class="flex gap-3"><i data-lucide="warehouse" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">In-House Inventory</div><div class="text-sm text-slate-400">Inspect before you buy — no brokers.</div></div></div>
+          <div class="flex gap-3"><i data-lucide="ship" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">Global Shipping</div><div class="text-sm text-slate-400">Export to 40+ countries; customs handled.</div></div></div>
+          <div class="flex gap-3"><i data-lucide="credit-card" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">Flexible Payment</div><div class="text-sm text-slate-400">Wire, ACH, credit card, Net-30 (approved).</div></div></div>
+          <div class="flex gap-3"><i data-lucide="users" class="w-6 h-6 text-amber-400 shrink-0 mt-1"></i><div><div class="text-white font-semibold mb-0.5">Dedicated Reps</div><div class="text-sm text-slate-400">Personal account manager from day one.</div></div></div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-square bg-gradient-to-br from-amber-500/30 to-ink-700 rounded-3xl border border-amber-500/30 grid-bg overflow-hidden relative">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+              <div class="font-display text-9xl text-amber-400 leading-none">100K</div>
+              <div class="text-2xl text-white font-bold uppercase tracking-wider mt-2">Sq Ft Hub</div>
+              <div class="text-sm text-slate-400 mt-1">Lawrenceville, Georgia</div>
+            </div>
+          </div>
+          <div class="absolute bottom-4 right-4 left-4 grid grid-cols-3 gap-2">
+            <div class="bg-ink-900/80 backdrop-blur rounded-lg p-3 border border-amber-500/20">
+              <div class="font-display text-2xl text-amber-400">5</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-400">FOB Points</div>
+            </div>
+            <div class="bg-ink-900/80 backdrop-blur rounded-lg p-3 border border-amber-500/20">
+              <div class="font-display text-2xl text-amber-400">24h</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-400">Ship Speed</div>
+            </div>
+            <div class="bg-ink-900/80 backdrop-blur rounded-lg p-3 border border-amber-500/20">
+              <div class="font-display text-2xl text-amber-400">40+</div>
+              <div class="text-[10px] uppercase tracking-wider text-slate-400">Countries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== HOW IT WORKS =========================== -->
+<section id="process" class="py-20 bg-ink-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">From Click to Truck</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">HOW IT WORKS</h2>
+      <p class="text-slate-400">Four steps from inquiry to delivery. No surprises, no hidden fees.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="relative">
+        <div class="bg-ink-800 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover h-full">
+          <div class="font-display text-7xl text-amber-500/30 leading-none mb-3">01</div>
+          <h3 class="font-display text-2xl text-white mb-2">BROWSE & REQUEST</h3>
+          <p class="text-sm text-slate-400">Pick a live lot or submit your wishlist (category, lot size, budget). We email a full manifest within 1 business day.</p>
+        </div>
+        <i data-lucide="arrow-right" class="hidden lg:block absolute top-1/2 -right-5 w-7 h-7 text-amber-400/60 -translate-y-1/2"></i>
+      </div>
+      <div class="relative">
+        <div class="bg-ink-800 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover h-full">
+          <div class="font-display text-7xl text-amber-500/30 leading-none mb-3">02</div>
+          <h3 class="font-display text-2xl text-white mb-2">QUOTE & FREIGHT</h3>
+          <p class="text-sm text-slate-400">Confirm pricing + live LTL/FTL freight quote from your FOB. Inspect at our GA hub if you'd like to see it in person.</p>
+        </div>
+        <i data-lucide="arrow-right" class="hidden lg:block absolute top-1/2 -right-5 w-7 h-7 text-amber-400/60 -translate-y-1/2"></i>
+      </div>
+      <div class="relative">
+        <div class="bg-ink-800 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover h-full">
+          <div class="font-display text-7xl text-amber-500/30 leading-none mb-3">03</div>
+          <h3 class="font-display text-2xl text-white mb-2">PAY & RESERVE</h3>
+          <p class="text-sm text-slate-400">Wire, ACH, or credit card (Net-30 available). The load is locked once funds clear; loading scheduled within 48h.</p>
+        </div>
+        <i data-lucide="arrow-right" class="hidden lg:block absolute top-1/2 -right-5 w-7 h-7 text-amber-400/60 -translate-y-1/2"></i>
+      </div>
+      <div class="relative">
+        <div class="bg-ink-800 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover h-full">
+          <div class="font-display text-7xl text-amber-500/30 leading-none mb-3">04</div>
+          <h3 class="font-display text-2xl text-white mb-2">SHIP & TRACK</h3>
+          <p class="text-sm text-slate-400">Pick up at our dock or we drop-ship. You get BOL, tracking, and a delivery ETA — anywhere in the world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CUSTOMER TYPES / USE CASES =========================== -->
+<section class="py-20 bg-ink-800 border-y border-ink-700/60 stripe-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Who We Serve</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">BUILT FOR RESELLERS</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover">
+        <i data-lucide="globe" class="w-10 h-10 text-amber-400 mb-3"></i>
+        <h3 class="text-white font-bold text-lg mb-2">Online Resellers</h3>
+        <p class="text-sm text-slate-400">Amazon FBM, eBay, Whatnot, Poshmark, Facebook Marketplace — high-margin per-unit lots.</p>
+      </div>
+      <div class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover">
+        <i data-lucide="store" class="w-10 h-10 text-amber-400 mb-3"></i>
+        <h3 class="text-white font-bold text-lg mb-2">Bin Stores & Discount Retail</h3>
+        <p class="text-sm text-slate-400">Weekly truckload programs sized for $5/$3/$1 drop-pricing models.</p>
+      </div>
+      <div class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover">
+        <i data-lucide="gavel" class="w-10 h-10 text-amber-400 mb-3"></i>
+        <h3 class="text-white font-bold text-lg mb-2">Auction Warehouses</h3>
+        <p class="text-sm text-slate-400">Consistent fresh inventory for live and online auction houses across the U.S.</p>
+      </div>
+      <div class="bg-ink-900 border border-ink-700 hover:border-amber-500 rounded-2xl p-6 card-hover">
+        <i data-lucide="plane" class="w-10 h-10 text-amber-400 mb-3"></i>
+        <h3 class="text-white font-bold text-lg mb-2">Exporters & Wholesale</h3>
+        <p class="text-sm text-slate-400">40' containers, full documentation, and customs guidance for LATAM, Africa, SE Asia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== TESTIMONIALS =========================== -->
+<section class="py-20 bg-ink-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Buyer Stories</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">TRUSTED BY RESELLERS NATIONWIDE</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-ink-800 border border-ink-700 rounded-2xl p-7">
+        <div class="flex gap-1 text-amber-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-slate-300 leading-relaxed mb-6">"Zen has been our weekly source for Amazon LPN smalls since 2023. Manifests are accurate, freight quotes are honest, and the team actually picks up the phone."</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-700">
+          <div class="w-11 h-11 rounded-full bg-amber-500 text-ink-900 font-bold flex items-center justify-center">JM</div>
+          <div>
+            <div class="text-white font-semibold text-sm">James M.</div>
+            <div class="text-xs text-slate-400">Bin Store Owner · Atlanta, GA</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-ink-800 border border-ink-700 rounded-2xl p-7">
+        <div class="flex gap-1 text-amber-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-slate-300 leading-relaxed mb-6">"We import 2 containers per quarter to our Trinidad warehouse. Zen handled all the export docs and customs paperwork — saved us countless headaches."</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-700">
+          <div class="w-11 h-11 rounded-full bg-amber-500 text-ink-900 font-bold flex items-center justify-center">RS</div>
+          <div>
+            <div class="text-white font-semibold text-sm">Rajiv S.</div>
+            <div class="text-xs text-slate-400">Wholesale Importer · Port of Spain, TT</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-ink-800 border border-ink-700 rounded-2xl p-7">
+        <div class="flex gap-1 text-amber-400 mb-4">
+          <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+        </div>
+        <p class="text-slate-300 leading-relaxed mb-6">"Best electronics manifests in the business. Grade A/B is real Grade A/B — not the mislabeled junk we used to get elsewhere. Loyal customer."</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-700">
+          <div class="w-11 h-11 rounded-full bg-amber-500 text-ink-900 font-bold flex items-center justify-center">DC</div>
+          <div>
+            <div class="text-white font-semibold text-sm">Diana C.</div>
+            <div class="text-xs text-slate-400">Amazon FBM Seller · Dallas, TX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FACILITY / FOB MAP =========================== -->
+<section id="facility" class="py-20 bg-ink-800 border-y border-ink-700/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Coast-to-Coast</p>
+        <h2 class="font-display text-4xl md:text-5xl text-white mb-4">5 FOB SHIPPING POINTS</h2>
+        <p class="text-slate-300 mb-8 leading-relaxed">Cut freight costs by picking the FOB closest to your buyer. We coordinate cross-docking and consolidation when needed.</p>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between bg-ink-900 border border-ink-700 rounded-xl p-4 hover:border-amber-500 transition">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i><div><div class="text-white font-semibold">Lawrenceville, GA</div><div class="text-xs text-slate-400">HQ · 100,000 sq ft · All categories</div></div></div>
+            <span class="text-amber-400 font-bold text-sm">PRIMARY</span>
+          </div>
+          <div class="flex items-center justify-between bg-ink-900 border border-ink-700 rounded-xl p-4 hover:border-amber-500 transition">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i><div><div class="text-white font-semibold">Memphis, TN</div><div class="text-xs text-slate-400">Mid-South hub · Tools & general merch</div></div></div>
+            <span class="text-slate-400 font-bold text-sm">FOB</span>
+          </div>
+          <div class="flex items-center justify-between bg-ink-900 border border-ink-700 rounded-xl p-4 hover:border-amber-500 transition">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i><div><div class="text-white font-semibold">Edison, NJ</div><div class="text-xs text-slate-400">Northeast hub · Apparel & furniture</div></div></div>
+            <span class="text-slate-400 font-bold text-sm">FOB</span>
+          </div>
+          <div class="flex items-center justify-between bg-ink-900 border border-ink-700 rounded-xl p-4 hover:border-amber-500 transition">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i><div><div class="text-white font-semibold">Dallas, TX</div><div class="text-xs text-slate-400">South-Central hub · Electronics</div></div></div>
+            <span class="text-slate-400 font-bold text-sm">FOB</span>
+          </div>
+          <div class="flex items-center justify-between bg-ink-900 border border-ink-700 rounded-xl p-4 hover:border-amber-500 transition">
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i><div><div class="text-white font-semibold">Long Beach, CA</div><div class="text-xs text-slate-400">West Coast & export · Container loads</div></div></div>
+            <span class="text-slate-400 font-bold text-sm">FOB / EXPORT</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] bg-ink-900 rounded-2xl border border-ink-700 overflow-hidden grid-bg relative">
+          <!-- Stylized US map placeholder -->
+          <svg viewBox="0 0 600 380" class="w-full h-full">
+            <defs>
+              <radialGradient id="dot" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#F59E0B" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Simple US shape stand-in -->
+            <path d="M60,140 Q90,80 160,90 L260,80 Q320,75 380,85 L480,95 Q540,110 540,160 L530,230 Q510,290 440,300 L320,310 Q200,308 130,290 Q70,275 55,220 Z" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+            <!-- FOB dots -->
+            <g>
+              <circle cx="370" cy="220" r="32" fill="url(#dot)"/>
+              <circle cx="370" cy="220" r="7" fill="#F59E0B"/>
+              <text x="380" y="245" fill="#fff" font-size="14" font-weight="700">GA</text>
+            </g>
+            <g>
+              <circle cx="305" cy="210" r="26" fill="url(#dot)"/>
+              <circle cx="305" cy="210" r="5" fill="#FBBF24"/>
+              <text x="280" y="200" fill="#cbd5e1" font-size="11" font-weight="600">TN</text>
+            </g>
+            <g>
+              <circle cx="445" cy="160" r="26" fill="url(#dot)"/>
+              <circle cx="445" cy="160" r="5" fill="#FBBF24"/>
+              <text x="450" y="152" fill="#cbd5e1" font-size="11" font-weight="600">NJ</text>
+            </g>
+            <g>
+              <circle cx="245" cy="240" r="26" fill="url(#dot)"/>
+              <circle cx="245" cy="240" r="5" fill="#FBBF24"/>
+              <text x="225" y="265" fill="#cbd5e1" font-size="11" font-weight="600">TX</text>
+            </g>
+            <g>
+              <circle cx="105" cy="200" r="26" fill="url(#dot)"/>
+              <circle cx="105" cy="200" r="5" fill="#FBBF24"/>
+              <text x="80" y="190" fill="#cbd5e1" font-size="11" font-weight="600">CA</text>
+            </g>
+          </svg>
+          <div class="absolute bottom-4 left-4 right-4 bg-ink-900/80 backdrop-blur rounded-xl p-4 border border-amber-500/20 flex items-center justify-between">
+            <div>
+              <div class="text-xs uppercase tracking-wider text-amber-400">Total network</div>
+              <div class="font-display text-2xl text-white">5 Hubs · 40+ Countries</div>
+            </div>
+            <i data-lucide="zap" class="w-8 h-8 text-amber-400"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CTA / QUOTE FORM =========================== -->
+<section id="quote" class="py-20 bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 stripe-bg relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-ink-900/70 font-bold mb-2">Free · No Obligation</p>
+        <h2 class="font-display text-4xl md:text-6xl text-ink-900 mb-4 leading-none">REQUEST<br/>YOUR QUOTE.</h2>
+        <p class="text-ink-900/90 text-lg mb-6 max-w-xl">Tell us what you want to move and we'll send a manifest, photos, and a delivered price within 24 hours.</p>
+        <ul class="space-y-2 text-ink-900 font-medium">
+          <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-5 h-5"></i> Manifests within 1 business day</li>
+          <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-5 h-5"></i> Live freight quote included</li>
+          <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-5 h-5"></i> Personal account rep assigned</li>
+        </ul>
+      </div>
+      <div class="bg-ink-900 rounded-2xl p-7 shadow-2xl">
+        <h3 class="font-display text-2xl text-white mb-5">START YOUR REQUEST</h3>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-3">
+            <input type="text" placeholder="First name" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+            <input type="text" placeholder="Last name" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          </div>
+          <input type="email" placeholder="Business email" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <input type="tel" placeholder="Phone (WhatsApp friendly)" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <input type="text" placeholder="Company / ship-to country" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <div class="grid grid-cols-2 gap-3">
+            <select class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
+              <option>Lot Size</option>
+              <option>Truckload (22-26 pallets)</option>
+              <option>Pallet (1-10)</option>
+              <option>Box / Case</option>
+              <option>40' Container</option>
+            </select>
+            <select class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
+              <option>Category</option>
+              <option>Apparel</option>
+              <option>Electronics</option>
+              <option>Tools / Hardware</option>
+              <option>Furniture</option>
+              <option>General Merchandise</option>
+              <option>Mixed / All</option>
+            </select>
+          </div>
+          <textarea rows="3" placeholder="Tell us about your buying needs, budget, or favorite retailers..." class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"></textarea>
+          <button class="cta-btn w-full text-ink-900 font-bold py-3.5 rounded-lg flex items-center justify-center gap-2">SEND REQUEST <i data-lucide="send" class="w-5 h-5"></i></button>
+          <p class="text-xs text-slate-500 text-center">By submitting, you agree to our terms. We respond within 24h.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== NEWSLETTER =========================== -->
+<section class="py-12 bg-ink-900 border-y border-ink-700">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h3 class="font-display text-3xl text-white mb-2">JOIN THE MAILING LIST</h3>
+    <p class="text-slate-400 mb-5">Get new truckload and pallet listings sent to your inbox every Monday.</p>
+    <form class="flex flex-col sm:flex-row max-w-xl mx-auto gap-2">
+      <input type="email" placeholder="your@email.com" class="flex-1 bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none placeholder-slate-500"/>
+      <button class="cta-btn text-ink-900 font-bold px-7 py-3 rounded-lg">Subscribe</button>
+    </form>
+    <p class="text-xs text-slate-500 mt-3">No spam — just inventory. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- =========================== FAQ =========================== -->
+<section class="py-20 bg-ink-800 border-y border-ink-700/60">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Common Questions</p>
+      <h2 class="font-display text-4xl md:text-5xl text-white">FAQ</h2>
+    </div>
+    <div class="space-y-3" id="faqRoot">
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          What is a manifested truckload?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">A manifested load comes with an item-level spreadsheet: UPC/SKU, description, original retail (MSRP), quantity, and condition. This lets you calculate margin before you commit. Unmanifested loads have no list and ship at a steeper discount — buyer takes more risk for more upside.</div>
+      </details>
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          Do you ship internationally?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">Yes. We export 40' containers (FCL) and consolidated pallets to 40+ countries, primarily LATAM, the Caribbean, West Africa, and Southeast Asia. We handle BOL, commercial invoice, packing list, and basic HS classification. Buyer is responsible for destination customs and duties.</div>
+      </details>
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          What payment methods do you accept?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">Wire transfer (preferred for orders over $5k), ACH, credit card (3% processing fee), and Net-30 terms for approved repeat buyers after 3 successful orders.</div>
+      </details>
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          Can I inspect inventory before buying?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">Absolutely. Walk-ins welcome at our Lawrenceville, GA facility Monday–Friday, 9am–5pm ET. We recommend booking a slot in advance so a rep can pull the specific lots you're considering.</div>
+      </details>
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          What's the difference between customer returns, overstock, and shelf pulls?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+          <strong class="text-white">Customer returns</strong>: items returned by end consumers (mixed condition).
+          <strong class="text-white">Overstock</strong>: brand-new, unsold inventory in original packaging.
+          <strong class="text-white">Shelf pulls</strong>: items removed from store shelves to make room for new seasonal stock — typically new, may have minor packaging wear.
+        </div>
+      </details>
+      <details class="bg-ink-900 border border-ink-700 rounded-xl group">
+        <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold text-white">
+          Is there a minimum order?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-amber-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">No hard minimum. We sell anything from a single case (~$200) to multi-container exports. Per-unit pricing improves significantly at the pallet and truckload tier.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CONTACT =========================== -->
+<section id="contact" class="py-20 bg-ink-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-1">
+        <p class="text-xs uppercase tracking-[0.3em] text-amber-400 font-bold mb-2">Get in Touch</p>
+        <h2 class="font-display text-4xl text-white mb-6">CONTACT US</h2>
+        <div class="space-y-5 text-slate-300">
+          <div class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400 mt-1 shrink-0"></i><div><div class="text-white font-semibold mb-0.5">Headquarters</div><div class="text-sm text-slate-400">Lawrenceville, Georgia 30043, USA<br/>100,000 sq ft warehouse facility</div></div></div>
+          <div class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-amber-400 mt-1 shrink-0"></i><div><div class="text-white font-semibold mb-0.5">Phone / WhatsApp</div><a href="tel:+17705550100" class="text-sm hover:text-amber-400">+1 (770) 555-0100</a></div></div>
+          <div class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-amber-400 mt-1 shrink-0"></i><div><div class="text-white font-semibold mb-0.5">Email</div><a href="mailto:sales@zenliquidator.com" class="text-sm hover:text-amber-400">sales@zenliquidator.com</a></div></div>
+          <div class="flex gap-3"><i data-lucide="clock" class="w-5 h-5 text-amber-400 mt-1 shrink-0"></i><div><div class="text-white font-semibold mb-0.5">Business Hours</div><div class="text-sm text-slate-400">Mon–Fri · 9:00 AM – 6:00 PM ET<br/>Inspections by appointment</div></div></div>
+        </div>
+      </div>
+      <div class="lg:col-span-2">
+        <div class="aspect-[16/9] rounded-2xl overflow-hidden border border-ink-700 bg-ink-800 relative">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-84.05%2C33.92%2C-83.92%2C34.00&layer=mapnik&marker=33.9562%2C-83.9879"
+            class="w-full h-full"
+            style="filter: invert(0.9) hue-rotate(180deg);"
+            loading="lazy"
+          ></iframe>
+          <div class="absolute bottom-4 left-4 bg-ink-900/90 backdrop-blur rounded-lg p-3 border border-amber-500/30">
+            <div class="text-xs uppercase tracking-wider text-amber-400 font-bold mb-1">Visit us</div>
+            <div class="text-white font-semibold text-sm">Lawrenceville, GA 30043</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== FOOTER =========================== -->
+<footer class="bg-ink-900 border-t border-ink-700/60 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 rounded-lg bg-amber-500 flex items-center justify-center font-display text-ink-900 text-2xl">Z</div>
+          <div class="leading-tight">
+            <div class="font-display text-2xl text-white">ZEN LIQUIDATOR</div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-amber-400 font-semibold">Wholesale · Truckload · Pallet</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed mb-5 max-w-md">
+          Wholesale liquidation and OEM manufacturing of consumer goods. Direct-from-retailer truckloads, pallets, and container loads shipped from our 100,000 sq ft Georgia hub to buyers across 40+ countries.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-lg bg-ink-800 hover:bg-amber-500 hover:text-ink-900 text-slate-300 flex items-center justify-center transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-ink-800 hover:bg-amber-500 hover:text-ink-900 text-slate-300 flex items-center justify-center transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-ink-800 hover:bg-amber-500 hover:text-ink-900 text-slate-300 flex items-center justify-center transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-ink-800 hover:bg-amber-500 hover:text-ink-900 text-slate-300 flex items-center justify-center transition"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Shop</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#truckload" class="hover:text-amber-400">Truckloads</a></li>
+          <li><a href="#pallet" class="hover:text-amber-400">Pallets</a></li>
+          <li><a href="#box" class="hover:text-amber-400">Box / Case Lots</a></li>
+          <li><a href="#container" class="hover:text-amber-400">40' Containers</a></li>
+          <li><a href="#categories" class="hover:text-amber-400">By Category</a></li>
+          <li><a href="#retailers" class="hover:text-amber-400">By Retailer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Company</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#about" class="hover:text-amber-400">About Us</a></li>
+          <li><a href="#facility" class="hover:text-amber-400">Facility</a></li>
+          <li><a href="#process" class="hover:text-amber-400">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+          <li><a href="#" class="hover:text-amber-400">Blog & Buyer Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Resources</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#quote" class="hover:text-amber-400">Request a Quote</a></li>
+          <li><a href="#" class="hover:text-amber-400">Freight Calculator</a></li>
+          <li><a href="#" class="hover:text-amber-400">Sample Manifests</a></li>
+          <li><a href="#" class="hover:text-amber-400">Export FAQs</a></li>
+          <li><a href="#" class="hover:text-amber-400">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-amber-400">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Trust badges row -->
+    <div class="border-t border-ink-700/60 pt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div class="flex items-center gap-3"><i data-lucide="shield-check" class="w-8 h-8 text-amber-400"></i><div><div class="text-white font-bold text-sm">BBB A+</div><div class="text-xs text-slate-500">Accredited Business</div></div></div>
+      <div class="flex items-center gap-3"><i data-lucide="award" class="w-8 h-8 text-amber-400"></i><div><div class="text-white font-bold text-sm">NFMA</div><div class="text-xs text-slate-500">Preferred Supplier</div></div></div>
+      <div class="flex items-center gap-3"><i data-lucide="lock" class="w-8 h-8 text-amber-400"></i><div><div class="text-white font-bold text-sm">SSL Secured</div><div class="text-xs text-slate-500">Bank-grade encryption</div></div></div>
+      <div class="flex items-center gap-3"><i data-lucide="globe-2" class="w-8 h-8 text-amber-400"></i><div><div class="text-white font-bold text-sm">40+ Countries</div><div class="text-xs text-slate-500">Export ready</div></div></div>
+    </div>
+
+    <div class="border-t border-ink-700/60 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+      <div>© 2026 Zen Liquidator LLC · All rights reserved · Lawrenceville, GA, USA</div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-amber-400">Terms</a>
+        <a href="#" class="hover:text-amber-400">Privacy</a>
+        <a href="#" class="hover:text-amber-400">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/17705550100" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-2xl transition" title="WhatsApp Sales">
+  <i data-lucide="message-circle" class="w-7 h-7"></i>
+</a>
+
+<script>
+  // Initialize Lucide icons
+  if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>
