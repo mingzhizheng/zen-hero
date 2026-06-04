@@ -101,7 +101,7 @@
 <div class="bg-ink-900 border-b border-ink-700/60 text-xs text-slate-400">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
     <div class="flex items-center gap-5">
-      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 relative"><span class="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-60"></span></span> Live inventory: <span class="text-emerald-300 font-semibold">14 truckloads</span> ready to ship</span>
+      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 relative"><span class="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-60"></span></span> Live inventory: <span class="text-emerald-300 font-semibold" id="liveLotCount">14 truckloads</span> ready to ship</span>
       <span class="hidden md:inline">|</span>
       <span class="hidden md:flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> FOB: GA · TN · NJ · TX · CA</span>
     </div>
@@ -192,8 +192,8 @@
         </div>
 
         <div class="flex flex-wrap items-center gap-4">
-          <a href="#shop" class="cta-btn text-ink-900 font-bold px-7 py-3.5 rounded-lg inline-flex items-center gap-2"><i data-lucide="shopping-cart" class="w-5 h-5"></i> Shop Live Inventory</a>
-          <a href="#quote" class="border-2 border-slate-400 hover:border-amber-400 hover:text-amber-400 text-white px-7 py-3 rounded-lg font-semibold inline-flex items-center gap-2 transition"><i data-lucide="phone-call" class="w-5 h-5"></i> Talk to a Sales Rep</a>
+          <a href="https://www.zenliquidator.com/shop" target="_top" class="cta-btn text-ink-900 font-bold px-7 py-3.5 rounded-lg inline-flex items-center gap-2"><i data-lucide="shopping-cart" class="w-5 h-5"></i> Shop Live Inventory</a>
+          <a href="https://www.zenliquidator.com/contact-2" target="_top" class="border-2 border-slate-400 hover:border-amber-400 hover:text-amber-400 text-white px-7 py-3 rounded-lg font-semibold inline-flex items-center gap-2 transition"><i data-lucide="phone-call" class="w-5 h-5"></i> Talk to a Sales Rep</a>
         </div>
 
         <!-- Trust mini-stats -->
@@ -223,11 +223,11 @@
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span class="text-xs uppercase tracking-wider text-emerald-400 font-bold">LIVE · 14 Lots Available</span>
+              <span class="text-xs uppercase tracking-wider text-emerald-400 font-bold" id="liveLotCountInline">LIVE · 14 Lots Available</span>
             </div>
-            <a href="#shop" class="text-xs text-amber-400 hover:underline">View all →</a>
+            <a href="https://www.zenliquidator.com/shop" target="_top" class="text-xs text-amber-400 hover:underline">View all →</a>
           </div>
-          <div class="space-y-3">
+          <div class="space-y-3" id="liveLotsList">
             <!-- Lot card 1 -->
             <div class="bg-ink-800/80 border border-ink-700 hover:border-amber-500 rounded-xl p-4 card-hover">
               <div class="flex gap-3">
@@ -617,7 +617,7 @@
     </div>
 
     <div class="text-center mt-12">
-      <a href="#all-lots" class="inline-flex items-center gap-2 border-2 border-amber-500 hover:bg-amber-500 hover:text-ink-900 text-amber-400 px-8 py-3 rounded-lg font-bold transition">Browse All 142 Available Lots <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+      <a href="https://www.zenliquidator.com/shop" target="_top" class="inline-flex items-center gap-2 border-2 border-amber-500 hover:bg-amber-500 hover:text-ink-900 text-amber-400 px-8 py-3 rounded-lg font-bold transition" id="browseAllBtn">Browse All <span id="totalLotsNum">142</span> Available Lots <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
     </div>
   </div>
 </section>
@@ -972,24 +972,28 @@
       </div>
       <div class="bg-ink-900 rounded-2xl p-7 shadow-2xl">
         <h3 class="font-display text-2xl text-white mb-5">START YOUR REQUEST</h3>
-        <form class="space-y-4">
+        <div id="quoteFormSuccess" class="hidden bg-emerald-500/20 border border-emerald-500 text-emerald-300 p-4 rounded-lg mb-4">
+          <strong>✅ Request received!</strong> Our sales team will reply within 24 hours.
+        </div>
+        <div id="quoteFormError" class="hidden bg-red-500/20 border border-red-500 text-red-300 p-4 rounded-lg mb-4"></div>
+        <form id="quoteForm" class="space-y-4" onsubmit="return false;">
           <div class="grid grid-cols-2 gap-3">
-            <input type="text" placeholder="First name" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
-            <input type="text" placeholder="Last name" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+            <input type="text" name="firstName" required placeholder="First name *" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+            <input type="text" name="lastName" placeholder="Last name" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
           </div>
-          <input type="email" placeholder="Business email" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
-          <input type="tel" placeholder="Phone (WhatsApp friendly)" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
-          <input type="text" placeholder="Company / ship-to country" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <input type="email" name="email" required placeholder="Business email *" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <input type="tel" name="phone" placeholder="Phone (WhatsApp friendly)" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
+          <input type="text" name="company" placeholder="Company / ship-to country" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"/>
           <div class="grid grid-cols-2 gap-3">
-            <select class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
-              <option>Lot Size</option>
+            <select name="lotSize" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
+              <option value="">Lot Size</option>
               <option>Truckload (22-26 pallets)</option>
               <option>Pallet (1-10)</option>
               <option>Box / Case</option>
               <option>40' Container</option>
             </select>
-            <select class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
-              <option>Category</option>
+            <select name="category" class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full">
+              <option value="">Category</option>
               <option>Apparel</option>
               <option>Electronics</option>
               <option>Tools / Hardware</option>
@@ -998,8 +1002,8 @@
               <option>Mixed / All</option>
             </select>
           </div>
-          <textarea rows="3" placeholder="Tell us about your buying needs, budget, or favorite retailers..." class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"></textarea>
-          <button class="cta-btn w-full text-ink-900 font-bold py-3.5 rounded-lg flex items-center justify-center gap-2">SEND REQUEST <i data-lucide="send" class="w-5 h-5"></i></button>
+          <textarea name="message" rows="3" placeholder="Tell us about your buying needs, budget, or favorite retailers..." class="bg-ink-800 text-white rounded-lg px-4 py-3 border border-ink-700 focus:border-amber-500 outline-none w-full placeholder-slate-500"></textarea>
+          <button type="submit" id="quoteSubmitBtn" class="cta-btn w-full text-ink-900 font-bold py-3.5 rounded-lg flex items-center justify-center gap-2">SEND REQUEST <i data-lucide="send" class="w-5 h-5"></i></button>
           <p class="text-xs text-slate-500 text-center">By submitting, you agree to our terms. We respond within 24h.</p>
         </form>
       </div>
@@ -1193,6 +1197,193 @@
 <script>
   // Initialize Lucide icons
   if (window.lucide) { lucide.createIcons(); }
+</script>
+
+<!-- ========================================================================
+  Dynamic Backend Integration
+  Fetches live data from Wix HTTP Functions + handles form submission
+  + auto-resize protocol for Wix HTML Embed
+========================================================================= -->
+<script>
+(function() {
+  // Backend base URL — Wix HTTP Functions endpoint
+  var API_BASE = 'https://www.zenliquidator.com/_functions';
+
+  // ========== Auto-resize protocol (Wix iframe) ==========
+  function reportHeight() {
+    var h = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+    try { window.parent.postMessage({ type: 'setHeight', height: h }, '*'); } catch(e){}
+    try { window.parent.postMessage({ height: h, src: 'zen-liquidator' }, '*'); } catch(e){}
+    try { window.parent.postMessage('setHeight:' + h, '*'); } catch(e){}
+  }
+  window.addEventListener('load', reportHeight);
+  window.addEventListener('resize', reportHeight);
+  if (window.ResizeObserver) new ResizeObserver(reportHeight).observe(document.body);
+  setTimeout(reportHeight, 500); setTimeout(reportHeight, 1500); setTimeout(reportHeight, 3000);
+
+  // ========== Helper: safe fetch with timeout ==========
+  function api(path, opts) {
+    opts = opts || {};
+    opts.headers = opts.headers || {};
+    if (opts.body && typeof opts.body !== 'string') {
+      opts.body = JSON.stringify(opts.body);
+      opts.headers['Content-Type'] = 'application/json';
+    }
+    return Promise.race([
+      fetch(API_BASE + path, opts).then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      }),
+      new Promise(function(_, rej) { setTimeout(function(){ rej(new Error('timeout')); }, 10000); })
+    ]);
+  }
+
+  // ========== Load live stats (truckload count) ==========
+  function loadStats() {
+    api('/stats').then(function(data) {
+      var n = data.totalLots || 0;
+      var truck = data.truckloads || 0;
+      // Update Hero top bar
+      var el1 = document.getElementById('liveLotCount');
+      if (el1) el1.textContent = truck + ' truckloads';
+      // Update Hero right card
+      var el2 = document.getElementById('liveLotCountInline');
+      if (el2) el2.textContent = 'LIVE · ' + n + ' Lots Available';
+      // Update Browse All button
+      var el3 = document.getElementById('totalLotsNum');
+      if (el3) el3.textContent = n;
+    }).catch(function(err) {
+      console.warn('[ZenLiq] Stats API unavailable, using fallback:', err.message);
+    });
+  }
+
+  // ========== Load live lots into Hero right-side card ==========
+  function loadLiveLots() {
+    api('/lots?featured=true&limit=3').then(function(data) {
+      var list = document.getElementById('liveLotsList');
+      if (!list || !data.items || data.items.length === 0) return;
+      list.innerHTML = data.items.map(function(lot) {
+        var cond = (lot.condition && lot.condition[0]) || '';
+        var iconMap = { 'Truckload': 'truck', 'Pallet': 'package', 'Container': 'container', 'Box': 'box' };
+        return [
+          '<div class="bg-ink-800/80 border border-ink-700 hover:border-amber-500 rounded-xl p-4 card-hover">',
+          '  <div class="flex gap-3">',
+          '    <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-amber-500/20 to-amber-600/5 flex items-center justify-center text-amber-400 shrink-0">',
+          '      <i data-lucide="' + (iconMap[lot.lotType] || 'truck') + '" class="w-9 h-9"></i>',
+          '    </div>',
+          '    <div class="flex-1 min-w-0">',
+          '      <div class="flex items-center gap-2 mb-1">',
+          '        <span class="text-[10px] uppercase font-bold tracking-wider text-ink-900 bg-amber-400 px-2 py-0.5 rounded">' + (lot.lotType || '').toUpperCase() + '</span>',
+          cond ? '<span class="text-[10px] uppercase font-bold tracking-wider text-emerald-300 bg-emerald-900/50 px-2 py-0.5 rounded">' + cond.toUpperCase() + '</span>' : '',
+          '      </div>',
+          '      <h4 class="text-white font-semibold text-sm leading-tight truncate">' + escapeHtml(lot.title) + '</h4>',
+          '      <div class="text-xs text-slate-400 mt-1">' + escapeHtml(lot.fobLocation || '') + (lot.extRetail ? ' · Ext. Retail $' + formatNum(lot.extRetail) : '') + '</div>',
+          '      <div class="flex items-center justify-between mt-2">',
+          '        <div class="text-amber-400 font-bold text-base">$' + formatNum(lot.askingPrice) + '</div>',
+          '        <a href="https://www.zenliquidator.com/shop" target="_top" class="text-xs text-slate-300 hover:text-amber-400">Details →</a>',
+          '      </div>',
+          '    </div>',
+          '  </div>',
+          '</div>'
+        ].join('');
+      }).join('');
+      // Re-init icons
+      if (window.lucide) lucide.createIcons();
+      setTimeout(reportHeight, 300);
+    }).catch(function(err) {
+      console.warn('[ZenLiq] Lots API unavailable, using fallback:', err.message);
+    });
+  }
+
+  // ========== Quote form submission ==========
+  function setupQuoteForm() {
+    var form = document.getElementById('quoteForm');
+    var btn = document.getElementById('quoteSubmitBtn');
+    var successBox = document.getElementById('quoteFormSuccess');
+    var errorBox = document.getElementById('quoteFormError');
+    if (!form || !btn) return;
+
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (successBox) successBox.classList.add('hidden');
+      if (errorBox) errorBox.classList.add('hidden');
+
+      // Validate
+      var data = {};
+      var inputs = form.querySelectorAll('input[name], select[name], textarea[name]');
+      var valid = true;
+      inputs.forEach(function(input) {
+        data[input.name] = input.value.trim();
+        if (input.required && !input.value.trim()) {
+          input.style.borderColor = '#EF4444';
+          valid = false;
+        } else {
+          input.style.borderColor = '';
+        }
+      });
+      if (!valid) {
+        if (errorBox) {
+          errorBox.textContent = 'Please fill in required fields (First name and Business email).';
+          errorBox.classList.remove('hidden');
+        }
+        return;
+      }
+
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      btn.innerHTML = 'SENDING...';
+
+      api('/quote', { method: 'POST', body: data }).then(function(res) {
+        if (res.success) {
+          form.style.display = 'none';
+          if (successBox) successBox.classList.remove('hidden');
+        } else {
+          throw new Error(res.error || 'Submission failed');
+        }
+      }).catch(function(err) {
+        if (errorBox) {
+          errorBox.textContent = 'Submission failed: ' + err.message + '. Please email sales@zenliquidator.com or call (770) 555-0100.';
+          errorBox.classList.remove('hidden');
+        }
+        btn.disabled = false;
+        btn.style.opacity = '';
+        btn.innerHTML = 'SEND REQUEST';
+      });
+    });
+  }
+
+  // ========== Helpers ==========
+  function formatNum(n) {
+    if (n == null) return '0';
+    return Number(n).toLocaleString('en-US');
+  }
+  function escapeHtml(s) {
+    if (s == null) return '';
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  // ========== Init ==========
+  function init() {
+    if (window.lucide) lucide.createIcons();
+    loadStats();
+    loadLiveLots();
+    setupQuoteForm();
+    // Re-load stats every 60 seconds (keep "live" feel)
+    setInterval(loadStats, 60000);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
 </body>
 </html>
